@@ -89,10 +89,10 @@ internal sealed class GenerateFoldersCommand : Command<GenerateFoldersCommand.Se
         [Description("The output folder path. system create all folder inside automaticlly.")]
         [CommandOption("-o|--output")]
         public string OutputDir { get; init; } = "./result";
-        [Description("The change of an image go to validator set.")]
+        [Description("The chance of an image go to validator set.")]
         [CommandOption("-v|--vali")]
         public float ValidatorChange { get; init; } = 10;
-        [Description("The change of an image go to test set.")]
+        [Description("The chance of an image go to test set.")]
         [CommandOption("-t|--test")]
         public float TestChange { get; init; } = 10;
         [Description("Allowed Extensions")]
