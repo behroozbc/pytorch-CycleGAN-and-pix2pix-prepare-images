@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sharplab prepearimages", "sharplab prepearimages\sharplab prepearimages.csproj", "{688D4368-BE49-4B0C-A04D-4B94E9A60B85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sharplab prepareimages", "sharplab prepearimages\sharplab prepareimages.csproj", "{688D4368-BE49-4B0C-A04D-4B94E9A60B85}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
