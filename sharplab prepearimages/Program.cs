@@ -30,7 +30,6 @@ internal sealed class GenerateFoldersCommand : Command<GenerateFoldersCommand.Se
         AnsiConsole.Status()
             .Start("Thinking...", ctx =>
             {
-                // Simulate some work
                 ctx.Status("Genetate train set.");
                 ctx.Spinner(Spinner.Known.SquareCorners);
                 ctx.SpinnerStyle(Style.Parse("yellow"));
