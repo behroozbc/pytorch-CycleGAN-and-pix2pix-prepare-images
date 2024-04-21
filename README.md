@@ -6,7 +6,7 @@
 A command line tool to assist in preparing training image data for pytorch-CycleGAN-and-pix2pix and PyTorch-UNet. This tool allows you to focus on your project and tasks.
 
 **Installation**<br>
-You can download tools according to your needs there are two tools one for pytorch-CycleGAN-and-pix2pix and the other one for PyTorch-UNet. They are separated by OS and CPU architecture. If your system does not exist you can submit an issue or use the portable version which needs to install .Net runtime on your OS. you can find more information about installing .Net runtime on your OS in the link.
+You can download tools according to your needs there are two tools one for pytorch-CycleGAN-and-pix2pix and the other one for PyTorch-UNet. They are separated by OS and CPU architecture. If your system does not exist you can submit an issue or use the portable version which needs to install .Net runtime on your OS. you can find more information about installing .Net runtime on your OS in the <a href="https://dotnet.microsoft.com/en-us/download/dotnet/8.0#:~:text=winget%20instructions-,.NET%20Runtime,-8.0.4">link</a>.
 
 **Usage**
 <br>The pytorch-CycleGAN-and-pix2pix helper flags list. <br>
