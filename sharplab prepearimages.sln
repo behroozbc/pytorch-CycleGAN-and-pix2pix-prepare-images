@@ -5,7 +5,15 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sharplab prepareimages", "sharplab prepearimages\sharplab prepareimages.csproj", "{688D4368-BE49-4B0C-A04D-4B94E9A60B85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pytorch-UNet prepareimages", "Pytorch-UNet prepareimages\Pytorch-UNet prepareimages.csproj", "{3F3300C6-61B6-4EE5-AC1A-3A07B19252C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pytorch-UNet prepareimages", "Pytorch-UNet prepareimages\Pytorch-UNet prepareimages.csproj", "{3F3300C6-61B6-4EE5-AC1A-3A07B19252C9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "merge2images", "merge2images\merge2images.csproj", "{3001ACAD-C68D-4448-B2F7-BA075C03CA95}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "convertppm2jpg", "convertppm2jpg\convertppm2jpg.csproj", "{14C3A204-BC67-4071-901F-F24DEA1E116D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "test-timespanproblem", "test-timespanproblem\test-timespanproblem.csproj", "{B9D5B153-9925-4CBB-B10D-DC3EC58B3708}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateMaskImages", "CreateMaskImages\CreateMaskImages.csproj", "{EDFAE7E8-BD9C-4820-84DE-1DA8350252D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +29,22 @@ Global
 		{3F3300C6-61B6-4EE5-AC1A-3A07B19252C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F3300C6-61B6-4EE5-AC1A-3A07B19252C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F3300C6-61B6-4EE5-AC1A-3A07B19252C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3001ACAD-C68D-4448-B2F7-BA075C03CA95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3001ACAD-C68D-4448-B2F7-BA075C03CA95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3001ACAD-C68D-4448-B2F7-BA075C03CA95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3001ACAD-C68D-4448-B2F7-BA075C03CA95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14C3A204-BC67-4071-901F-F24DEA1E116D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14C3A204-BC67-4071-901F-F24DEA1E116D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14C3A204-BC67-4071-901F-F24DEA1E116D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14C3A204-BC67-4071-901F-F24DEA1E116D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9D5B153-9925-4CBB-B10D-DC3EC58B3708}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9D5B153-9925-4CBB-B10D-DC3EC58B3708}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9D5B153-9925-4CBB-B10D-DC3EC58B3708}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9D5B153-9925-4CBB-B10D-DC3EC58B3708}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDFAE7E8-BD9C-4820-84DE-1DA8350252D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDFAE7E8-BD9C-4820-84DE-1DA8350252D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDFAE7E8-BD9C-4820-84DE-1DA8350252D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDFAE7E8-BD9C-4820-84DE-1DA8350252D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

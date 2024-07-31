@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.PixelFormats;
 using SixLabors.ImageSharp.Processing;
 
 using Spectre.Console;
@@ -24,15 +25,15 @@ internal sealed class GenerateFoldersCommand : Command<GenerateFoldersCommand.Se
             ctx.SpinnerStyle(Style.Parse("yellow"));
             var dirImgs = Directory.CreateDirectory(settings.OutputDir + "/imgs");
             var dirMasks = Directory.CreateDirectory(settings.OutputDir + "/masks");
-            Parallel.ForEach(files, file =>
+            Parallel.ForEach(files, async file =>
             {
                 var fileInfo = new FileInfo(file);
-                using var imag = Image.Load(fileInfo.FullName);
+                using var imag = Image.Load<Rg32>(fileInfo.FullName);
                 using var mask = imag.Clone(c => { });
                 imag.Mutate(x => x.Crop(new Rectangle(0, 0, imag.Width / 2, imag.Height)));
                 mask.Mutate(x => x.Crop(new Rectangle(mask.Width / 2, 0, mask.Width / 2, mask.Height)));
-                imag.Save(Path.Combine(dirImgs.FullName, fileInfo.Name));
-                mask.Save(Path.Combine(dirImgs.FullName, fileInfo.Name));
+                await imag.SaveAsync(Path.Combine(dirImgs.FullName, fileInfo.Name));
+                await mask.SaveAsync(Path.Combine(dirMasks.FullName, fileInfo.Name));
             });
             AnsiConsole.WriteLine($"Output: {dirImgs.FullName}");
             AnsiConsole.WriteLine($"Output: {dirMasks.FullName}");
@@ -46,7 +47,7 @@ internal sealed class GenerateFoldersCommand : Command<GenerateFoldersCommand.Se
     {
         [Description("The folder contains all data.")]
         [CommandOption("-i|--input")]
-        public string InputFolder { get; init; }
+        public string InputFolder { get; init; }= @"E:\Work\University\sensor\train";
         [Description("The output folder path. system create all folder inside automaticlly.")]
         [CommandOption("-o|--output")]
         public string OutputDir { get; init; } = "./result";
